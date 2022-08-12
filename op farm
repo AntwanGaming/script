@@ -1,0 +1,551 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local main = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Rightscript = Instance.new("ScrollingFrame")
+local Doubleweightclicklift = Instance.new("TextButton")
+local DoubleWeightslowfarm = Instance.new("TextButton")
+local DoubleWeightfastfarm = Instance.new("TextButton")
+local DoubleWightgetbig = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local leftscript = Instance.new("ScrollingFrame")
+local Dumbellclicklift = Instance.new("TextButton")
+local Dumbellslowfarm = Instance.new("TextButton")
+local Dumbellfastfarm = Instance.new("TextButton")
+local Dumbellgetbig = Instance.new("TextButton")
+local DoubleWeights = Instance.new("TextLabel")
+local Madeby = Instance.new("TextLabel")
+local Textname = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local X = Instance.new("TextButton")
+local Equiptool = Instance.new("TextButton")
+local unEquiptool = Instance.new("TextButton")
+local Lag = Instance.new("Frame")
+local lagX = Instance.new("TextButton")
+local Fps = Instance.new("TextButton")
+local Antiafk = Instance.new("TextButton")
+local DelHud = Instance.new("TextButton")
+local Hideurweights = Instance.new("TextButton")
+local delRumble = Instance.new("TextButton")
+local Lagsettings = Instance.new("TextLabel")
+local Strengthearned = Instance.new("Frame")
+local Gained = Instance.new("TextLabel")
+
+--Properties:
+
+main.Name = "main"
+main.Parent = game.CoreGui
+
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(38, 237, 255)
+Frame.Position = UDim2.new(0.468866706, 0, 0.326732665, 0)
+Frame.Size = UDim2.new(0, 433, 0, 248)
+Frame.Active = true
+Frame.Draggable = true
+
+UICorner.Parent = Frame
+
+Rightscript.Name = "Right script"
+Rightscript.Parent = Frame
+Rightscript.Active = true
+Rightscript.BackgroundColor3 = Color3.fromRGB(96, 186, 255)
+Rightscript.Position = UDim2.new(0.695150137, 0, 0.100418411, 0)
+Rightscript.Size = UDim2.new(0, 122, 0, 210)
+
+Doubleweightclicklift.Name = "Double weight click lift"
+Doubleweightclicklift.Parent = Rightscript
+Doubleweightclicklift.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Doubleweightclicklift.Size = UDim2.new(0, 108, 0, 50)
+Doubleweightclicklift.Font = Enum.Font.ArialBold
+Doubleweightclicklift.Text = "DW click lift"
+Doubleweightclicklift.TextColor3 = Color3.fromRGB(0, 0, 0)
+Doubleweightclicklift.TextSize = 14.000
+
+DoubleWeightslowfarm.Name = "Double Weight slow farm"
+DoubleWeightslowfarm.Parent = Rightscript
+DoubleWeightslowfarm.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+DoubleWeightslowfarm.Position = UDim2.new(0, 0, 0.117154814, 0)
+DoubleWeightslowfarm.Size = UDim2.new(0, 108, 0, 50)
+DoubleWeightslowfarm.Font = Enum.Font.ArialBold
+DoubleWeightslowfarm.Text = "DW slow farm"
+DoubleWeightslowfarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+DoubleWeightslowfarm.TextSize = 14.000
+
+DoubleWeightfastfarm.Name = "Double Weight fast farm"
+DoubleWeightfastfarm.Parent = Rightscript
+DoubleWeightfastfarm.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+DoubleWeightfastfarm.Position = UDim2.new(0, 0, 0.234309629, 0)
+DoubleWeightfastfarm.Size = UDim2.new(0, 108, 0, 50)
+DoubleWeightfastfarm.Font = Enum.Font.ArialBold
+DoubleWeightfastfarm.Text = "DW fast farm"
+DoubleWeightfastfarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+DoubleWeightfastfarm.TextSize = 14.000
+
+DoubleWightgetbig.Name = "Double Wight get big"
+DoubleWightgetbig.Parent = Rightscript
+DoubleWightgetbig.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+DoubleWightgetbig.Position = UDim2.new(0, 0, 0.355648547, 0)
+DoubleWightgetbig.Size = UDim2.new(0, 108, 0, 50)
+DoubleWightgetbig.Font = Enum.Font.ArialBold
+DoubleWightgetbig.Text = "DW get big"
+DoubleWightgetbig.TextColor3 = Color3.fromRGB(0, 0, 0)
+DoubleWightgetbig.TextSize = 14.000
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BackgroundTransparency = -0.060
+TextBox.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextBox.Position = UDim2.new(0.332563519, 0, 0.330543935, 0)
+TextBox.Size = UDim2.new(0, 145, 0, 50)
+TextBox.Font = Enum.Font.Creepster
+TextBox.Text = "ToolName"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+
+leftscript.Name = "left script"
+leftscript.Parent = Frame
+leftscript.Active = true
+leftscript.BackgroundColor3 = Color3.fromRGB(96, 186, 255)
+leftscript.Position = UDim2.new(0.0254041571, 0, 0.100418411, 0)
+leftscript.Size = UDim2.new(0, 122, 0, 210)
+
+Dumbellclicklift.Name = "Dumbell click lift"
+Dumbellclicklift.Parent = leftscript
+Dumbellclicklift.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Dumbellclicklift.Size = UDim2.new(0, 108, 0, 50)
+Dumbellclicklift.Font = Enum.Font.ArialBold
+Dumbellclicklift.Text = "DB click lift"
+Dumbellclicklift.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dumbellclicklift.TextSize = 14.000
+
+Dumbellslowfarm.Name = "Dumbell slow farm"
+Dumbellslowfarm.Parent = leftscript
+Dumbellslowfarm.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Dumbellslowfarm.Position = UDim2.new(0, 0, 0.117154814, 0)
+Dumbellslowfarm.Size = UDim2.new(0, 108, 0, 50)
+Dumbellslowfarm.Font = Enum.Font.ArialBold
+Dumbellslowfarm.Text = "DB slow farm"
+Dumbellslowfarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dumbellslowfarm.TextSize = 14.000
+
+Dumbellfastfarm.Name = "Dumbell fast farm"
+Dumbellfastfarm.Parent = leftscript
+Dumbellfastfarm.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Dumbellfastfarm.Position = UDim2.new(0, 0, 0.234309629, 0)
+Dumbellfastfarm.Size = UDim2.new(0, 108, 0, 50)
+Dumbellfastfarm.Font = Enum.Font.ArialBold
+Dumbellfastfarm.Text = "DB fast farm"
+Dumbellfastfarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dumbellfastfarm.TextSize = 14.000
+
+Dumbellgetbig.Name = "Dumbell get big"
+Dumbellgetbig.Parent = leftscript
+Dumbellgetbig.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+Dumbellgetbig.Position = UDim2.new(0, 0, 0.355648518, 0)
+Dumbellgetbig.Size = UDim2.new(0, 108, 0, 50)
+Dumbellgetbig.Font = Enum.Font.ArialBold
+Dumbellgetbig.Text = "DB Get Big"
+Dumbellgetbig.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dumbellgetbig.TextSize = 14.000
+
+DoubleWeights.Name = "DoubleWeights"
+DoubleWeights.Parent = Frame
+DoubleWeights.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DoubleWeights.BackgroundTransparency = 1.220
+DoubleWeights.Position = UDim2.new(0.307159364, 0, 0.533962071, 0)
+DoubleWeights.Size = UDim2.new(0, 168, 0, 50)
+DoubleWeights.Font = Enum.Font.DenkOne
+DoubleWeights.Text = "DW/DB:"
+DoubleWeights.TextColor3 = Color3.fromRGB(0, 0, 0)
+DoubleWeights.TextSize = 14.000
+
+Madeby.Name = "Made by"
+Madeby.Parent = Frame
+Madeby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Madeby.BackgroundTransparency = 1.220
+Madeby.Position = UDim2.new(0.307159364, 0, 0.100418389, 0)
+Madeby.Size = UDim2.new(0, 168, 0, 50)
+Madeby.Font = Enum.Font.DenkOne
+Madeby.Text = "Made by:Abercke04"
+Madeby.TextColor3 = Color3.fromRGB(0, 0, 0)
+Madeby.TextSize = 14.000
+
+Textname.Name = "Text name"
+Textname.Parent = Frame
+Textname.BackgroundColor3 = Color3.fromRGB(44, 188, 255)
+Textname.Size = UDim2.new(0, 433, 0, 24)
+Textname.Font = Enum.Font.Creepster
+Textname.Text = "Dumbell                                           Double Weight"
+Textname.TextColor3 = Color3.fromRGB(0, 0, 0)
+Textname.TextSize = 25.000
+
+UICorner_2.Parent = Textname
+
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+X.Position = UDim2.new(0.389454722, 0, -0.00246119825, 0)
+X.Size = UDim2.new(0, 68, 0, 25)
+X.Font = Enum.Font.ArialBold
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextSize = 27.000
+
+Equiptool.Name = "Equip tool"
+Equiptool.Parent = Frame
+Equiptool.BackgroundColor3 = Color3.fromRGB(55, 145, 255)
+Equiptool.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Equiptool.Position = UDim2.new(0.307159364, 0, 0.78320533, 0)
+Equiptool.Size = UDim2.new(0, 167, 0, 40)
+Equiptool.Font = Enum.Font.ArialBold
+Equiptool.Text = "Equiptool"
+Equiptool.TextColor3 = Color3.fromRGB(0, 0, 0)
+Equiptool.TextSize = 14.000
+Equiptool.MouseButton1Click:Connect(function()
+	_G.equip = true
+	_G.unequip = false
+	Equiptool.Visible = false
+	unEquiptool.Visible = true
+	while _G.equip do
+		wait()
+		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+			if v.Name == TextBox.Text then
+				v.Parent = game.Players.LocalPlayer.Character
+			end
+		end
+	end
+end)
+
+unEquiptool.Name = "unEquip tool"
+unEquiptool.Parent = Frame
+unEquiptool.BackgroundColor3 = Color3.fromRGB(55, 145, 255)
+unEquiptool.BorderColor3 = Color3.fromRGB(0, 0, 0)
+unEquiptool.Position = UDim2.new(0.307159364, 0, 0.78320533, 0)
+unEquiptool.Size = UDim2.new(0, 167, 0, 40)
+unEquiptool.Font = Enum.Font.ArialBold
+unEquiptool.Text = "unEquiptool"
+unEquiptool.TextColor3 = Color3.fromRGB(0, 0, 0)
+unEquiptool.TextSize = 14.000
+unEquiptool.Visible = false
+unEquiptool.MouseButton1Click:Connect(function()
+	_G.equip = false
+	Equiptool.Visible = true
+	unEquiptool.Visible = false
+end)
+
+Lag.Name = "Lag"
+Lag.Parent = main
+Lag.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Lag.Position = UDim2.new(0.0291909613, 0, 0.287128717, 0)
+Lag.Size = UDim2.new(0, 361, 0, 215)
+Lag.Active = true
+Lag.Draggable = true
+
+lagX.Name = "lag X"
+lagX.Parent = Lag
+lagX.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+lagX.Position = UDim2.new(0, 0, -0.00465116277, 0)
+lagX.Size = UDim2.new(0, 39, 0, 25)
+lagX.Font = Enum.Font.SourceSans
+lagX.Text = "X"
+lagX.TextColor3 = Color3.fromRGB(0, 0, 0)
+lagX.TextSize = 30.000
+
+Fps.Name = "Fps"
+Fps.Parent = Lag
+Fps.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+Fps.Position = UDim2.new(0, 0, 0.279069781, 0)
+Fps.Size = UDim2.new(0, 86, 0, 50)
+Fps.Font = Enum.Font.PermanentMarker
+Fps.Text = "Fps"
+Fps.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fps.TextScaled = true
+Fps.TextSize = 14.000
+Fps.TextWrapped = true
+Fps.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/mmEr60d5", true))()
+end)
+
+Antiafk.Name = "Anti afk"
+Antiafk.Parent = Lag
+Antiafk.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+Antiafk.Position = UDim2.new(0.379501373, 0, 0.279069781, 0)
+Antiafk.Size = UDim2.new(0, 86, 0, 50)
+Antiafk.Font = Enum.Font.PermanentMarker
+Antiafk.Text = "Anti Afk"
+Antiafk.TextColor3 = Color3.fromRGB(0, 0, 0)
+Antiafk.TextScaled = true
+Antiafk.TextSize = 14.000
+Antiafk.TextWrapped = true
+Antiafk.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+end)
+
+DelHud.Name = "Del Hud"
+DelHud.Parent = Lag
+DelHud.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+DelHud.Position = UDim2.new(0.761772871, 0, 0.279069781, 0)
+DelHud.Size = UDim2.new(0, 86, 0, 50)
+DelHud.Font = Enum.Font.PermanentMarker
+DelHud.Text = "Del Hud"
+DelHud.TextColor3 = Color3.fromRGB(0, 0, 0)
+DelHud.TextScaled = true
+DelHud.TextSize = 14.000
+DelHud.TextWrapped = true
+DelHud.MouseButton1Click:Connect(function()
+	game:GetService("Players").LocalPlayer.PlayerGui.HUD:Destroy()
+end)
+
+Hideurweights.Name = "Hide ur weights"
+Hideurweights.Parent = Lag
+Hideurweights.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+Hideurweights.Position = UDim2.new(0.185595557, 0, 0.632558167, 0)
+Hideurweights.Size = UDim2.new(0, 86, 0, 50)
+Hideurweights.Font = Enum.Font.PermanentMarker
+Hideurweights.Text = "Hide Weights"
+Hideurweights.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hideurweights.TextScaled = true
+Hideurweights.TextSize = 14.000
+Hideurweights.TextWrapped = true
+Hideurweights.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/8W1draqT", true))()
+end)
+
+delRumble.Name = "del Rumble"
+delRumble.Parent = Lag
+delRumble.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+delRumble.Position = UDim2.new(0.55401659, 0, 0.632558167, 0)
+delRumble.Size = UDim2.new(0, 86, 0, 50)
+delRumble.Font = Enum.Font.PermanentMarker
+delRumble.Text = "Del Rumble"
+delRumble.TextColor3 = Color3.fromRGB(0, 0, 0)
+delRumble.TextScaled = true
+delRumble.TextSize = 14.000
+delRumble.TextWrapped = true
+delRumble.MouseButton1Click:Connect(function()
+	game.ReplicatedFirst.TourneyQ:Destroy()
+end)
+
+Lagsettings.Name = "Lag settings"
+Lagsettings.Parent = Lag
+Lagsettings.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+Lagsettings.Position = UDim2.new(0.10803324, 0, 0, 0)
+Lagsettings.Size = UDim2.new(0, 322, 0, 24)
+Lagsettings.Font = Enum.Font.PermanentMarker
+Lagsettings.Text = "Lag settings"
+Lagsettings.TextColor3 = Color3.fromRGB(0, 0, 0)
+Lagsettings.TextScaled = true
+Lagsettings.TextSize = 14.000
+Lagsettings.TextWrapped = true
+
+Strengthearned.Name = "Strengthearned"
+Strengthearned.Parent = main
+Strengthearned.BackgroundColor3 = Color3.fromRGB(24, 74, 0)
+Strengthearned.Position = UDim2.new(0.0203857012, 0, 0.724752486, 0)
+Strengthearned.Size = UDim2.new(0, 234, 0, 129)
+Strengthearned.Active = true
+Strengthearned.Draggable = true
+
+Gained.Name = "Gained"
+Gained.Parent = Strengthearned
+Gained.BackgroundColor3 = Color3.fromRGB(32, 255, 50)
+Gained.Position = UDim2.new(0.0641025677, 0, 0.170542642, 0)
+Gained.Size = UDim2.new(0, 203, 0, 85)
+Gained.Font = Enum.Font.SourceSans
+Gained.Text = "Strength Earned"
+Gained.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gained.TextSize = 14.000
+
+-- Scripts:
+
+local function UFCLYWU_fake_script() -- DoubleWeights.Weight 
+	local script = Instance.new('LocalScript', DoubleWeights)
+
+	
+	repeat
+		wait(.1)
+		local num = 0
+		for i,v in pairs(game:GetService("CoreGui").RobloxGui.Backpack.Inventory.ScrollingFrame.UIGridFrame:GetChildren()) do
+			if v:IsA("TextButton") then
+				num += 1
+			end
+		end
+		DoubleWeights.Text = num.."Weights"
+	until num == 9999999999999
+end
+coroutine.wrap(UFCLYWU_fake_script)()
+local function KDSXOJ_fake_script() -- X.LocalScript 
+	local script = Instance.new('LocalScript', X)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(KDSXOJ_fake_script)()
+local function BEACF_fake_script() -- lagX.LocalScript 
+	local script = Instance.new('LocalScript', lagX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(BEACF_fake_script)()
+local function OIBSIB_fake_script() -- Gained.LocalScript 
+	local script = Instance.new('LocalScript', Gained)
+
+	local str = game:GetService("Players").LocalPlayer.leaderstats.Strength;
+	local curvalue = str.Value;
+	local earned = 0;
+	str:GetPropertyChangedSignal("Value"):Connect(function()
+		local delta = (str.Value - curvalue);
+		earned += delta;
+		Gained.Text = "Strength Earned: "..earned;
+		curvalue = str.Value;
+	end)
+end
+coroutine.wrap(OIBSIB_fake_script)()
+
+Doubleweightclicklift.MouseButton1Click:Connect(function()
+	_G.Auto4 = true
+	while _G.Auto4 do
+		wait(4.63)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == "Double Weight" then v:Activate() end
+
+		end
+	end
+
+	Doubleweightclicklift.Visible = true
+	Doubleweightclicklift.Visible = false
+	_G.farm = false
+end)
+
+DoubleWeightslowfarm.MouseButton1Click:Connect(function()
+	DoubleWeightslowfarm.Visible = true
+	DoubleWeightslowfarm.Visible = false
+	_G.farm = true
+	while _G.farm do
+		wait(0.7)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == TextBox.Text then v:Activate() end
+		end
+	end
+
+	DoubleWeightslowfarm.Visible = true
+	DoubleWeightslowfarm.Visible = false
+	_G.farm = false
+end)
+
+DoubleWeightfastfarm.MouseButton1Click:Connect(function()
+	DoubleWeightfastfarm.Visible = true
+	DoubleWeightfastfarm.Visible = false
+	_G.farm = true
+	while _G.farm do
+		wait(0.3)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == TextBox.Text then v:Activate() end
+		end
+	end
+
+	DoubleWeightslowfarm.Visible = true
+	DoubleWeightslowfarm.Visible = false
+	_G.farm = false
+end)
+
+DoubleWightgetbig.MouseButton1Click:Connect(function()
+	DoubleWightgetbig.Visible = true
+	DoubleWightgetbig.Visible = false
+	_G.farm = true
+	while _G.farm do
+		wait(0.5)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == TextBox.Text then v:Activate() end
+		end
+	end
+
+	DoubleWightgetbig.Visible = true
+	DoubleWightgetbig.Visible = false
+	_G.farm = false
+end)
+
+Dumbellclicklift.MouseButton1Click:Connect(function()
+	_G.Auto4 = true
+	while _G.Auto4 do
+		wait(4.63)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == "Dumbell" then v:Activate() end
+
+		end
+	end
+
+	Dumbellclicklift.Visible = true
+	Dumbellclicklift.Visible = false
+	_G.farm = false
+end)
+
+Dumbellslowfarm.MouseButton1Click:Connect(function()
+	Dumbellslowfarm.Visible = true
+	Dumbellslowfarm.Visible = false
+	_G.farm = true
+	while _G.farm do
+		wait(0.7)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == TextBox.Text then v:Activate() end
+		end
+	end
+end)
+
+Dumbellfastfarm.MouseButton1Click:Connect(function()
+	Dumbellfastfarm.Visible = true
+	Dumbellfastfarm.Visible = false
+	_G.farm = true
+	while _G.farm do
+		wait(0.3)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == TextBox.Text then v:Activate() end
+		end
+	end
+
+	Dumbellfastfarm.Visible = true
+	Dumbellfastfarm.Visible = false
+	_G.farm = false
+end)
+
+Dumbellgetbig.MouseButton1Click:Connect(function()
+	Dumbellgetbig.Visible = true
+	Dumbellgetbig.Visible = false
+	_G.farm = true
+	while _G.farm do
+		wait(0.5)
+		for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+			if v.Name == TextBox.Text then v:Activate() end
+		end
+	end
+
+	Dumbellgetbig.Visible = true
+	Dumbellgetbig.Visible = false
+	_G.farm = false
+end)
+
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Made by: Abercke04",
+	Text = "Sub to Antwan_Gaming| Enjoy!", 
+})
